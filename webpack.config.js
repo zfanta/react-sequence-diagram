@@ -1,4 +1,5 @@
 import {resolve} from 'path';
+import webpack from 'webpack';
 
 export default {
   entry: './src/index.js',
@@ -18,4 +19,10 @@ export default {
       }
     }]
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      _: 'underscore',
+      Raphael: 'raphael'
+    })
+  ]
 };

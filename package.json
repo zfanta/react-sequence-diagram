@@ -24,5 +24,10 @@
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1",
     "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "raphael": "^2.2.7",
+    "snapsvg": "^0.5.1",
+    "underscore": "^1.8.3"
   }
 }
