@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.js --colors",
-    "dev": "cross-env NODE_ENV=development START_HOT=1 node --trace-warnings -r babel-register ./node_modules/webpack-dev-server/bin/webpack-dev-server --config webpack.config.dev.js --colors"
+    "dev": "cross-env NODE_ENV=development START_HOT=1 node --trace-warnings -r babel-register ./node_modules/webpack-dev-server/bin/webpack-dev-server --config webpack.config.dev.js --colors",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
