@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/zfanta/react-sequence-diagram.git",
   "author": "Hwantae Ji <jht008@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack src/index.js lib/index.js"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
 }
