@@ -1,0 +1,8 @@
+{
+  "name": "react-sequence-diagram",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/zfanta/react-sequence-diagram.git",
+  "author": "Hwantae Ji <jht008@gmail.com>",
+  "license": "MIT"
+}
