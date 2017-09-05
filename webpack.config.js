@@ -5,7 +5,10 @@ export default {
   entry: './src/index.js',
   output: {
     filename: 'index.js',
-    path: resolve(__dirname, 'lib')
+    path: resolve(__dirname, 'lib'),
+    library: 'SequenceDiagram',
+    libraryExport: 'default',
+    libraryTarget: 'umd2'
   },
   module: {
     rules: [{
@@ -21,6 +24,7 @@ export default {
   },
   plugins: [
     new webpack.ProvidePlugin({
+      eve: 'eve',
       _: 'underscore',
       Raphael: 'raphael'
     })
