@@ -6,9 +6,17 @@
   "author": "Hwantae Ji <jht008@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack src/index.js lib/index.js"
+    "build": "cross-env NODE_ENV=production node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.js --colors",
+    "dev": "cross-env NODE_ENV=development node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.js --colors"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "cross-env": "^5.0.5",
     "webpack": "^3.5.5"
   }
 }
