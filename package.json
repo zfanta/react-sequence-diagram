@@ -1,6 +1,6 @@
 {
   "name": "react-sequence-diagram",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "lib/index.js",
   "repository": "https://github.com/zfanta/react-sequence-diagram.git",
   "author": "Hwantae Ji <jht008@gmail.com>",
