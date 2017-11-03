@@ -8,7 +8,9 @@ class SequenceDiagram extends Component {
     if (!this.div) return;
 
     const { input, options } = this.props;
-    this.div.removeChild(this.div.children[0]);
+    if (this.div.children[0]){
+      this.div.removeChild(this.div.children[0]);
+    }
     try {
       const diagram = Diagram.parse(input);
       diagram.drawSVG(this.div, options);
