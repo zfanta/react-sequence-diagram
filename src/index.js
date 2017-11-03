@@ -12,7 +12,7 @@ class SequenceDiagram extends Component {
   }
 
   render() {
-    return <div ref={div => { this.div = div }} />
+    return <div className={this.props.className} ref={div => { this.div = div }} />
   }
 }
 
