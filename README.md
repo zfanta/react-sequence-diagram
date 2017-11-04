@@ -20,8 +20,15 @@ const input =
   'China-->Andrew: How are you?\n' +
   'Andrew->>China: I am good thanks!';
 
+const options = {
+  theme: 'simple'
+};
 
-render(<SequenceDiagram input={input} options={} />, document.getElementById('root'));
+function onError(error) {
+  console.log(error);
+}
+
+render(<SequenceDiagram input={input} options={options} onError={onError} />, document.getElementById('root'));
 ```
 
 More details at [js-sequence-diagrams](https://github.com/bramp/js-sequence-diagrams)

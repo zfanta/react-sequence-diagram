@@ -9,5 +9,12 @@ const input =
   'China-->Andrew: How are you?\n' +
   'Andrew->>China: I am good thanks!';
 
+const options = {
+  theme: 'simple'
+};
 
-render(<SequenceDiagram input={input} />, document.getElementById('root'));
+function onError(error) {
+  console.log(error);
+}
+
+render(<SequenceDiagram input={input} options={options} onError={onError} />, document.getElementById('root'));
